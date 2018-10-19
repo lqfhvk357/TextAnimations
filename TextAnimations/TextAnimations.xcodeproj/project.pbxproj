@@ -12,6 +12,8 @@
 		434B7D752178309200ED485F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434B7D732178309200ED485F /* Main.storyboard */; };
 		434B7D772178309300ED485F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434B7D762178309300ED485F /* Assets.xcassets */; };
 		434B7D7A2178309300ED485F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434B7D782178309300ED485F /* LaunchScreen.storyboard */; };
+		434B7D832178316E00ED485F /* LCTextAnimationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B7D822178316E00ED485F /* LCTextAnimationLabel.swift */; };
+		434B7DBC217A23F500ED485F /* LCLayerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B7DBB217A23F500ED485F /* LCLayerAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		434B7D762178309300ED485F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		434B7D792178309300ED485F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		434B7D7B2178309300ED485F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		434B7D822178316E00ED485F /* LCTextAnimationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCTextAnimationLabel.swift; sourceTree = "<group>"; };
+		434B7DBB217A23F500ED485F /* LCLayerAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCLayerAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		434B7D6E2178309200ED485F /* TextAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				434B7D812178313A00ED485F /* AnimationLabel */,
 				434B7D6F2178309200ED485F /* AppDelegate.swift */,
 				434B7D712178309200ED485F /* ViewController.swift */,
 				434B7D732178309200ED485F /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				434B7D7B2178309300ED485F /* Info.plist */,
 			);
 			path = TextAnimations;
+			sourceTree = "<group>";
+		};
+		434B7D812178313A00ED485F /* AnimationLabel */ = {
+			isa = PBXGroup;
+			children = (
+				434B7DBB217A23F500ED485F /* LCLayerAnimation.swift */,
+				434B7D822178316E00ED485F /* LCTextAnimationLabel.swift */,
+			);
+			path = AnimationLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +104,7 @@
 		434B7D642178309200ED485F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LC;
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "罗超";
@@ -135,6 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				434B7D832178316E00ED485F /* LCTextAnimationLabel.swift in Sources */,
+				434B7DBC217A23F500ED485F /* LCLayerAnimation.swift in Sources */,
 				434B7D722178309200ED485F /* ViewController.swift in Sources */,
 				434B7D702178309200ED485F /* AppDelegate.swift in Sources */,
 			);
