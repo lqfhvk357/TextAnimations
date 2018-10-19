@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         "sit down and ask,",
         "'What is it?'",
         "but the boy asks,",
-        "'What can I do with it?'.",
+//        "'What can I do with it?'.",
         "- Steve Jobs",
         "Swift",
         "Objective-C",
@@ -43,8 +43,9 @@ class ViewController: UIViewController {
         let animL = LCTextAnimationLabel.init(frame: CGRect.init(x: 0, y: 100, width: UIScreen.main.bounds.width, height: 200))
         animL.textAlignment = .center
         animL.font = UIFont.systemFont(ofSize: 40)
-        animL.text = "Swift"
         self.view.addSubview(animL)
+        animL.text = "Swift"
+        animL.textColor = .green
         textL = animL
         
         // Do any additional setup after loading the view, typically from a nib.

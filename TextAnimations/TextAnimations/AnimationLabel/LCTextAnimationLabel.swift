@@ -84,8 +84,19 @@ class LCTextAnimationLabel: UILabel{
         }
         
         set {
-            super.text = newValue
+//            super.text = newValue
             self.attributedText = interanlAttributedText(string: newValue)
+        }
+    }
+    
+    override var textColor:UIColor! {
+        get {
+            return super.textColor
+        }
+        set {
+            super.textColor = newValue
+            let text = self.textStorage.string
+            self.text = text
         }
     }
     
@@ -189,7 +200,7 @@ extension LCTextAnimationLabel {
         for textLayer in oldCharTextLayers {
             let duration = TimeInterval(arc4random()%100)/125.0 + 0.35
             let delay = TimeInterval(arc4random_uniform(100))/500.0
-            let distance = CGFloat(arc4random()%50) + 25
+            let distance = CGFloat(arc4random()%50) + 100
             let angle = CGFloat(Double(arc4random())/Double.pi*2 - Double.pi/4)
             
             var transform = CATransform3DMakeTranslation(0, distance, 0)
@@ -224,11 +235,12 @@ extension LCTextAnimationLabel {
             let duration = TimeInterval(arc4random()%200/100)+0.25
             let delay = 0.06//NSTimeInterval(arc4random_uniform(100)/500)
             
+            textLayer.opacity = 0
             LCLayerAnimation.animation(textLayer: textLayer, duration: duration, delay: delay, effectAnimation: { oldLayer -> CATextLayer in
                 textLayer.opacity = 1.0
                 return textLayer
             }, completion: { finished in
-    
+                
             })
         }
         
